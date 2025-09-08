@@ -97,7 +97,7 @@
       unzip # Tool For Handling .zip Files
       usbutils # Good Tools For USB Devices
       v4l-utils # Used For Things Like OBS Virtual Camera
-      vesktop # Discord client
+      # vesktop # Discord client
       virtualbox # VM for occasionally testing own code
       vscode # Alternative code editor to nvim
       wget # Tool For Fetching Files With Links
