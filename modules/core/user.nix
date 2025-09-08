@@ -20,6 +20,7 @@ in {
         username = "${username}";
         homeDirectory = "/home/${username}";
         stateVersion = "23.11";
+        # stateVersion = "unstable";
       };
     };
   };

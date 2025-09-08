@@ -6,5 +6,7 @@ _: {
     hyprlock.enable = false;
     # ghostty.enable = false;
     qt.enable = true;
+
+    qt.platform = "qtct"; # explicit non-KDE platform
   };
 }

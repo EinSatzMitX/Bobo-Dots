@@ -53,11 +53,12 @@
       eog # For Image Viewing
       inxi # CLI System Information Tool
       killall # For Killing All Instances Of Programs
-      legendary-heroic # Epic games launcher
+      # legendary-heroic # Epic games launcher
+      legendary-gl # Epic games launcher
       libnotify # For Notifications
       libreoffice # Open-source Microsoft Office, if you want to say so
       lm_sensors # Used For Getting Hardware Temps
-      lmms # DAW software
+      # lmms # DAW software
       lolcat # Add Colors To Your Terminal Command Output
       lshw # Detailed Hardware Information
       lutris # Game Launcher for EXE files
@@ -86,7 +87,7 @@
       ripgrep # Improved Grep
       rust-analyzer
       rustup
-      satisfactorymodmanager # Mod manager for Satisfactory
+      # satisfactorymodmanager # Mod manager for Satisfactory
       scarab # Hollow Knight mod manager
       socat # Needed For Screenshots
       solaar # For configuring LogiTech devices
