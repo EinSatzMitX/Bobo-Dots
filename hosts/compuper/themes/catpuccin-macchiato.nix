@@ -21,6 +21,4 @@
 
   stylixImage = ../../../wallpapers/windows-error.jpg;
   rofiImage = "flatpuccin_4k_macchiato.png";
-  # vesktopTheme = "https://codeberg.org/nekoppuccin/vencord/raw/branch/main/themes/nekoppuccin-lawful.theme.css";
-  vesktopTheme = ../../../modules/home/vesktop/catpuccin-macchiato.json;
 }

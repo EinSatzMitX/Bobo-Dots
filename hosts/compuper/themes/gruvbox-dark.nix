@@ -24,6 +24,4 @@
 
   # Set Rofi Image
   rofiImage = "silksong_cover.jpg";
-
-  vesktopTheme = "https://raw.githubusercontent.com/adrxLV/adrx-dotfiles/refs/heads/config/midnight_gruvbox.theme.css";
 }

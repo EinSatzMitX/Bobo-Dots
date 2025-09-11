@@ -8,7 +8,7 @@
     settings = {
       vim_keys = false;
       rounded_corners = true;
-      proc_tree = true;
+      proc_tree = false;
       show_gpu_info = "on";
       show_uptime = true;
       show_coretemp = true;

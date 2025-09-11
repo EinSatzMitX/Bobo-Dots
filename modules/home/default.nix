@@ -31,7 +31,6 @@ in {
     ./stylix.nix
     ./swappy.nix
     ./swaync.nix
-    ./vesktop
     ./virtmanager.nix
     waybarChoice
     # ./wezterm.nix

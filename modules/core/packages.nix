@@ -19,6 +19,13 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnsupportedSystem = true;
+
+  # For qemu_kvm
+  # boot.binfmt = {
+  #   enable = true;
+  #   emulatedSystems = ["riscv64-linux"];
+  # };
 
   environment.systemPackages = with pkgs;
     [
@@ -41,6 +48,7 @@
       file-roller # Archive Manager
       flatpak # -1.000.000 social credit for using purely functional and declarative configs
       gcc # If you don't know what this is, go fuck yourself
+      gdb # GNU Debugger, useful for low level development
       gedit # Simple Graphical Text Editor
       gimp # GNU Image Manipulation Tool
       gitui # Git UI terminal program
@@ -68,6 +76,7 @@
       nautilus # GUI File manager, for drag&drop windows
       ncdu # Disk Usage Analyzer With Ncurses Interface
       nixfmt-rfc-style # Nix Formatter
+      nix-prefetch-git # For getting URLs for packaging nix packages
       nwg-displays #configure monitor configs via GUI
       onefetch # fetches information of a git repo
       obsidian # Markdown Document Editor
@@ -81,6 +90,9 @@
       playerctl # Allows Changing Media Volume Through Scripts
       polychromatic # For configuring razer devices
       prismlauncher # Minecraft Launcher
+      qemu # usually provides riscv64 out of the box
+      # qemuFull # "full" QEMU build
+      # qemu_kvm # for KVM-enabled virtualization
       quickshell # Framework for creating cool looking widgets
       r2modman # Mod manager for Steam games
       # rhythmbox
@@ -89,6 +101,7 @@
       rustup
       # satisfactorymodmanager # Mod manager for Satisfactory
       scarab # Hollow Knight mod manager
+      shotcut # Video editing software
       socat # Needed For Screenshots
       solaar # For configuring LogiTech devices
       # spotify-player # Spotify TUI application
@@ -98,7 +111,7 @@
       unzip # Tool For Handling .zip Files
       usbutils # Good Tools For USB Devices
       v4l-utils # Used For Things Like OBS Virtual Camera
-      # vesktop # Discord client
+      vesktop # Discord client
       virtualbox # VM for occasionally testing own code
       vscode # Alternative code editor to nvim
       wget # Tool For Fetching Files With Links
