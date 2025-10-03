@@ -20,8 +20,10 @@ in
           position = "top";
 
           modules-center = ["network" "pulseaudio" "cpu" "hyprland/workspaces" "memory" "clock"]; # Eterna: [ "hyprland/window" ]
-          modules-left = ["custom/startmenu" "hyprland/window"]; # Eternal:  [ "hyprland/workspaces" "cpu" "memory" "network" ]
-          modules-right = ["tray" "custom/notification" "custom/exit"]; # Eternal: [ "idle_inhibitor" "pulseaudio" "clock"  "custom/notification" "tray" ]
+          modules-left = ["custom/startmenu" "hyprland/window"];
+          # modules-left = ["hyprland/workspaces" "cpu" "memory" "network"];
+          modules-right = ["tray" "custom/notification" "custom/exit"];
+          # modules-right = ["idle_inhibitor" "pulseaudio" "clock" "custom/notification" "tray"];
 
           "hyprland/workspaces" = {
             format = "{name}";
@@ -51,6 +53,7 @@ in
             tooltip = true;
             on-click = "${terminal} -e btop";
           };
+
           "cpu" = {
             interval = 5;
             format = " {usage:2}%";
@@ -147,14 +150,14 @@ in
       ];
       style = concatStrings [
         ''
-                    * {
-                      font-size: 16px;
-                      font-family: JetBrainsMono Nerd Font, Font Awesome, sans-serif;
-                      font-weight: bold;
-                    }
-                    window#waybar {
+          * {
+            font-size: 16px;
+            font-family: JetBrainsMono Nerd Font, Font Awesome, sans-serif;
+            font-weight: bold;
+          }
+            window#waybar {
             background-color: transparent;
-            border-bottom: 1px solid rgba(30,32,48,0.8);
+            border-bottom: 1px solid rgba(30,32,48,0.0);
             border-radius: 0px;
             color: #${base.base05};
 
@@ -281,6 +284,8 @@ in
                       margin: 5px;
                       padding: 2px 20px;
                     }
+
+
         ''
       ];
     };

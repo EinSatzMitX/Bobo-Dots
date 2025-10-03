@@ -20,7 +20,7 @@
   };
 
   # Set Stylix Image
-  stylixImage = ../../../wallpapers/silksong_lava_boss.jpg;
+  stylixImage = ../../../wallpapers/forest-street.jpg;
 
   # Set Rofi Image
   rofiImage = "silksong_cover.jpg";

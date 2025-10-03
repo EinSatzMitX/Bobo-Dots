@@ -1,6 +1,6 @@
 {config, ...}: {
   services.swaync = {
-    # enable = true;
+    enable = true;
     settings = {
       positionX = "right";
       positionY = "top";
@@ -45,15 +45,15 @@
         volume = {
           label = "󰕾";
         };
-        # backlight = {
-        #   label = "󰃟";
-        # };
+        backlight = {
+          label = "󰃟";
+        };
       };
       widgets = [
         "title"
         "mpris"
         "volume"
-        # "backlight"
+        "backlight"
         "dnd"
         "notifications"
       ];
@@ -177,7 +177,7 @@
         margin-right: 18px;
       }
       .body {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         background: transparent;
         color: #${config.lib.stylix.colors.base05};

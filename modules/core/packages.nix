@@ -75,6 +75,7 @@
       mpv # Incredible Video Player
       nautilus # GUI File manager, for drag&drop windows
       ncdu # Disk Usage Analyzer With Ncurses Interface
+      nitch # NixOS-specific neofetch
       nixfmt-rfc-style # Nix Formatter
       nix-prefetch-git # For getting URLs for packaging nix packages
       nwg-displays #configure monitor configs via GUI

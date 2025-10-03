@@ -58,9 +58,9 @@ in {
         "systemctl --user start hyprpolkitagent"
         "killall -q swww;sleep .5 && swww-daemon &"
         "killall -q waybar;sleep .5 && waybar"
-        # "killall -q swaync;sleep .5 && swaync"
-        # "systemctl --user --no-block start swaync.service"
-        "mako &"
+        "killall -q swaync;sleep .5 && swaync"
+        "systemctl --user --no-block start swaync.service"
+        # "mako &"
         "nm-applet --indicator"
         "pypr &"
         "sleep 1.5 && swww img ${stylixImage}"
@@ -71,8 +71,8 @@ in {
         repeat_delay = 300;
         follow_mouse = 1;
         float_switch_override_focus = 0;
-        # sensitivity = 0;
-        sensitivity = 0.5;
+        sensitivity = 0;
+        # sensitivity = 0.5;
         touchpad = {
           natural_scroll = true;
           disable_while_typing = true;
@@ -173,7 +173,7 @@ in {
       ${extraMonitorSettings}
         # To enable blur on waybar uncomment the line below
         # Thanks to SchotjeChrisman
-        layerrule = blur,waybar
+        # layerrule = blur,waybar
     ";
   };
 }
