@@ -23,7 +23,8 @@
   } @ inputs: let
     system = "x86_64-linux";
     host = "compuper";
-    profile = "gruvbox-dark";
+    # profile = "gruvbox-dark";
+    profile = "hacker-dark";
     # profile = "catpuccin-macchiato";
     username = "bobo";
   in {

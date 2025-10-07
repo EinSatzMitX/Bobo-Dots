@@ -2,6 +2,7 @@
   inputs,
   config,
   pkgs,
+  # lib,
   ...
 }: {
   imports = [inputs.nvf.homeManagerModules.default];
@@ -10,6 +11,17 @@
     enable = true;
 
     settings.vim = {
+      # Color scheme test
+      theme = pkgs.lib.mkForce {
+        enable = true;
+        name = "gruvbox"; # must match the key in supported-themes.nix
+        style = "dark"; # "dark" or "light" for gruvbox
+        transparent = false; # true to try to enable transparent background
+        # extraConfig = ''          # optional: extra Lua run before the theme setup
+        #      -- your extra lua here
+        # '';
+      };
+
       lsp.enable = true;
       vimAlias = true;
       viAlias = true;
@@ -177,6 +189,7 @@
 
       statusline.lualine = {
         enable = true;
+        # theme = "base16-gruvbox-dark-medium";
         theme = "base16";
       };
 

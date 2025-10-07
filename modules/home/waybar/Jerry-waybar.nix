@@ -19,7 +19,7 @@ in
           layer = "top";
           position = "top";
 
-          modules-center = ["network" "pulseaudio" "cpu" "hyprland/workspaces" "memory" "clock"]; # Eterna: [ "hyprland/window" ]
+          modules-center = ["pulseaudio" "cpu" "hyprland/workspaces" "memory" "clock"]; # Eterna: [ "hyprland/window" ]
           modules-left = ["custom/startmenu" "hyprland/window"];
           # modules-left = ["hyprland/workspaces" "cpu" "memory" "network"];
           modules-right = ["tray" "custom/notification" "custom/exit"];
