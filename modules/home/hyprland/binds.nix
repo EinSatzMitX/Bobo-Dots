@@ -10,6 +10,7 @@ in {
       "$SUPER,Return,exec,${terminal}"
       "$modifier,K,exec,list-keybinds"
       "$modifier,SPACE,exec,rofi-launcher"
+      "$modifier,A,exec,hexecute"
       # "$modifier SHIFT,W,exec,web-search"
       "$modifier ALT,W,exec,wallsetter"
       "$modifier SHIFT,N,exec,swaync-client -rs"

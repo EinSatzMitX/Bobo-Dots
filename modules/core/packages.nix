@@ -56,6 +56,7 @@
       glxinfo #needed for inxi diag util
       godot # Open source game engine
       tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
+      inputs.hexecute.packages.${pkgs.system}.default # Awesome drawing gesture app launcher
       htop # Simple Terminal Based System Monitor
       hyprpicker # Color Picker
       eog # For Image Viewing

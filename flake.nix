@@ -12,6 +12,7 @@
     # stylix.url = "github:danth/stylix/release-25.05";
     stylix.url = "github:danth/stylix/master";
     nix-gaming.url = "github:fufexan/nix-gaming";
+    hexecute.url = "github:ThatOtherAndrew/Hexecute";
   };
   outputs = {
     self,
@@ -23,8 +24,8 @@
   } @ inputs: let
     system = "x86_64-linux";
     host = "compuper";
-    # profile = "gruvbox-dark";
-    profile = "hacker-dark";
+    profile = "gruvbox-dark";
+    # profile = "hacker-dark";
     # profile = "catpuccin-macchiato";
     username = "bobo";
   in {
