@@ -12,13 +12,16 @@
       export EDITOR="nvim"
       export VISUAL="nvim"
 
+      export MANPAGER="nvim +Man!"
+
       alias c="clear"
       alias ff="fastfetch"
       alias bc="bat -l conf"
       alias gc="git commit -am"
 
-
-
+      if [[ -o interactive ]]; then
+        cowsay "test"
+      fi
 
   '';
 }

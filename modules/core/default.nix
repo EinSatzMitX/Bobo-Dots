@@ -8,6 +8,7 @@
     ./network.nix
     # ./nfs.nix
     ./nh.nix
+    ./nix-ld.nix
     ./packages.nix
     # ./printing.nix
     ./security.nix

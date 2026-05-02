@@ -10,7 +10,7 @@
     seahorse.enable = true;
     fuse.userAllowOther = true;
     mtr.enable = true;
-    adb.enable = true;
+    # adb.enable = true;
     hyprlock.enable = true;
     gnupg.agent = {
       enable = true;
@@ -29,6 +29,7 @@
 
   environment.systemPackages = with pkgs;
     [
+      android-tools # This should include ADB
       appimage-run # Needed For AppImage Support
       aseprite # Pixelart editor
       bat # Cooler cat
@@ -53,15 +54,18 @@
       gimp # GNU Image Manipulation Tool
       gitui # Git UI terminal program
       glibc # I'm not quite sure why a build package is in my system packages, but I'm too afraid to remove it
-      glxinfo #needed for inxi diag util
+      # glxinfo #needed for inxi diag util
+      mesa-demos # replaces glxinfo, needed for inxi diag util
       godot # Open source game engine
       tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
       inputs.hexecute.packages.${pkgs.system}.default # Awesome drawing gesture app launcher
+      # idea # Java Code editor
       htop # Simple Terminal Based System Monitor
       hyprpicker # Color Picker
       eog # For Image Viewing
       inxi # CLI System Information Tool
       killall # For Killing All Instances Of Programs
+      krita # Drawing Program
       # legendary-heroic # Epic games launcher
       legendary-gl # Epic games launcher
       libnotify # For Notifications
@@ -73,6 +77,7 @@
       lutris # Game Launcher for EXE files
       manim # Python lib/program to create math animations
       mako # # Notification daemon, because swaync crashes
+      melonDS # Nintendo 3DS Emulator
       mpv # Incredible Video Player
       nautilus # GUI File manager, for drag&drop windows
       ncdu # Disk Usage Analyzer With Ncurses Interface

@@ -32,6 +32,7 @@ in {
       "adbusers"
       "docker"
       "libvirtd"
+      # "vboxusers"
       "lp"
       "networkmanager"
       "scanner"
