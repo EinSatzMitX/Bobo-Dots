@@ -30,6 +30,7 @@
   environment.systemPackages = with pkgs;
     [
       android-tools # This should include ADB
+      anki # Use it for Japanese Learrning
       appimage-run # Needed For AppImage Support
       aseprite # Pixelart editor
       bat # Cooler cat

@@ -20,8 +20,8 @@
   };
 
   # Set Stylix Image
-  stylixImage = ../../../wallpapers/forest-street.jpg;
+  stylixImage = ../../../wallpapers/ghibli-forest.jpg;
 
   # Set Rofi Image
-  rofiImage = "silksong_cover.jpg";
+  rofiImage = "cat_in_pond.jpg";
 }
